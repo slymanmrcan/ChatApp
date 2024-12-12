@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<div id="connectionStatus"> </div>
+<div id="userStatus"> </div>
+<div id="connectionId">Connection Id </div>
+<input type="text" id="nickName"/>
+<button id="sendNickName">Nick name belirleyin</button>
+<div id="clients"> </div>
+<input id="messagetext" placeholder="mesaj girin"/>
+<button id="sendmessagebtn">Mesaj Gönder</button>
+<div id="messages"> </div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Kullanıcı Listesi -->
+        <div class="col-md-4 border-end">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Kullanıcı Ara" />
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+
+    <div class="list-group overflow-auto" style="max-height: 500px;">
+                <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" >
+                    <img  class="rounded-circle me-2" width="50" height="50" />
+                    <div>
+                        <h6 class="mb-1">Name</h6>
+                        <small>LastMessage</small>
+                    </div>
+                </a>
+    </div>
+        <!-- Mesaj Alanı -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-light d-flex align-items-center">
+                    <img src="Model.ActiveUser.ProfileImage" class="rounded-circle me-2" width="40" height="40" />
+                    <div>
+                        <strong>Model.ActiveUser.Name</strong>
+                        <small class="d-block text-muted">Model.ActiveUser.Status</small>
+                    </div>
+                </div>
+                
+                <div class="card-body overflow-auto" style="max-height: 400px;">
+                   
+                    @*     <div class="d-flex @(message.IsSentByCurrentUser ? "justify-content-end" : "justify-content-start") mb-3"> *@
+                    @*         @if (!message.IsSentByCurrentUser) *@
+                    @*         { *@
+                    @*             <img src="@message.SenderProfileImage" class="rounded-circle me-2" width="40" height="40" /> *@
+                    @*         } *@
+                    @*         <div class="@(message.IsSentByCurrentUser ? "bg-primary text-white" : "bg-light") p-2 rounded"> *@
+                    @*             @message.Content *@
+                    @*             <div class="text-end small @(message.IsSentByCurrentUser ? "text-white-50" : "text-muted")"> *@
+                    @*                 @message.Timestamp.ToString("HH:mm | dd MMM") *@
+                    @*             </div> *@
+                    @*         </div> *@
+                    @*         @if (message.IsSentByCurrentUser) *@
+                    @*         { *@
+                    @*             <img src="@Model.CurrentUser.ProfileImage" class="rounded-circle ms-2" width="40" height="40" /> *@
+                    @*         } *@
+                    @*     </div> *@
+                    
+                </div>
+
+                <div class="card-footer">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Mesajınızı yazın..." />
+                        <button class="btn btn-primary" type="button">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

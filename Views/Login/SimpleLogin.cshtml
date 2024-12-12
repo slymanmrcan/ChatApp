@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Giriş yapınız";
+    Layout = "_Layout";
+}
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Kullanıcı Adı Girişi</h5>
+                    <form method="post" asp-controller="Login" asp-action="SimpleLogin">
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Kullanıcı Adı</label>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Kullanıcı adınızı giriniz" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @* <script> *@
+    @*     $(document).ready(function () { *@
+    @*         $("#username-form").on("submit", function (e) { *@
+    @*             e.preventDefault(); *@
+    @*             const username = $("#username").val(); *@
+    @*             if (!username) { *@
+    @*                 $("#error-message").text("Kullanıcı adı boş olamaz.").show(); *@
+    @*                 return; *@
+    @*             } *@
+    @*             fetch('/Login/SimpleLogin', { *@
+    @*                 method: 'POST', *@
+    @*                 headers: { *@
+    @*                     'Content-Type': 'application/json', *@
+    @*                 }, *@
+    @*                 body: JSON.stringify({ username }), // Parametreyi JSON formatında gönderiyoruz *@
+    @*             }) *@
+    @*                 .then(response => response.json()) // Gelen cevabı JSON olarak işler *@
+    @*                 .then(data => { *@
+    @*                     console.log('Başarılı:', data); *@
+    @*                 }) *@
+    @*                 .catch(error => { *@
+    @*                     console.error('Hata:', error); *@
+    @*                 }); *@
+    @*              *@
+    @*         }); *@
+    @*     }); *@
+    @* </script> *@
+
+}
