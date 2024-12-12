@@ -1,0 +1,54 @@
+﻿# .NET Core Build Artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.log
+*.cache
+*.vs/
+.vscode/
+.idea/
+*.userosscache
+
+# Rider Specific
+.idea/
+.idea_modules/
+*.sln.iml
+*.suo
+*.user
+*.dotSettings.user
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Runtime
+*.pid
+*.tar.gz
+*.zip
+
+# Visual Studio temporary files
+.vs/
+
+# Rider compiled output directories
+out/
+
+# Coverage directories
+coverage/
+coverage.info
+lcov-report/
+
+# Exclude node_modules if you are using JavaScript or TypeScript
+node_modules/
+
+# Publish Output
+publish/
