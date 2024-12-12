@@ -41,3 +41,4 @@ C:\Users\slyma\OneDrive\Masaüstü\.netcoreProject\ChatApp\bin\Debug\net8.0\Micr
 C:\Users\slyma\OneDrive\Masaüstü\.netcoreProject\ChatApp\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\slyma\OneDrive\Masaüstü\.netcoreProject\ChatApp\obj\Debug\net8.0\ChatApp.csproj.AssemblyReference.cache
 C:\Users\slyma\OneDrive\Masaüstü\.netcoreProject\ChatApp\obj\Debug\net8.0\ChatApp.csproj.Up2Date
+C:\Users\slyma\OneDrive\Masaüstü\.netcoreProject\ChatApp\obj\Debug\net8.0\ChatApp.sourcelink.json

@@ -94,11 +94,10 @@
 
                 // Mesajı ekle
                 $(".message-data.text-right").after(
-                    $("<div>").addClass('message-wrapper float-right').append(
-                        $("<div>").addClass('nickname').text(clientName1), // Göndericinin adı
-                        $("<div>").addClass('message other-message').text(message), // Mesaj içeriği
-                        $("<br>") // Alt satıra geçiş
-                    )
+                    `<div class="message-wrapper">
+                    <div class="nickname">${clientName1}</div>
+                    <div class="message other-message">${message}</div>
+                    </div>`
                 );
             })
             .catch((error) => {

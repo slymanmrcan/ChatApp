@@ -2,6 +2,12 @@
     background-color: #f4f7f6;
     margin-top:20px;
 }
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .card {
     background: #fff;
     transition: .5s;
