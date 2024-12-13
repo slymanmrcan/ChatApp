@@ -17,6 +17,7 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddSignalR();
 builder.Services.AddScoped<ChatHubBusiness>();
+builder.WebHost.UseUrls("http://*:5000");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
